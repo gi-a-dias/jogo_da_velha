@@ -17,7 +17,9 @@ class JogoDaVelha:
         self.placar_x = 0
         self.placar_o = 0
         self.texto_placar = ft.Text("", size=18, weight="bold",color="#212121")
-        
+
+
+#abre uma tela inicial     
     def _tela_inicial(self):
         btn_iniciar = ft.ElevatedButton(
             text= "🎮 COMEÇAR PARTIDA",
