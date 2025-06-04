@@ -83,6 +83,10 @@ Certifique-se de que o `AndroidManifest.xml` tem a permissão:
 - Android NDK 27.0.12077973
 - Java 11+
 
+## Atenção
+
+Alguns desafios ainda permanecem, como a adaptação final da build release e testes em diferentes dispositivos, mas a base do projeto já demonstra funcionamento estável e modular. 
+
 ## 👩‍💻 Desenvolvido por
 
 Giovanna Dias — Projeto de integração com sistema web via WebView.
