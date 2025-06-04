@@ -1,89 +1,88 @@
-# 🕹️ Jogo da Velha com Flet + Python
 
-Um simples e divertido **Jogo da Velha (Tic Tac Toe)** feito com [Flet](https://flet.dev), uma biblioteca Python para criação de interfaces gráficas multiplataforma (sem precisar usar HTML, CSS ou JavaScript).
+# Flutter WebView App
 
-## 📸 Preview
+Este é um projeto Flutter simples que utiliza o plugin `webview_flutter` para exibir uma aplicação web dentro de um aplicativo Android. Ele foi preparado para ser assinado e empacotado para produção (`release`).
 
-![Preview](#) <!-- Você pode colocar uma imagem ou GIF do jogo aqui -->
+## 📱 Funcionalidade
 
----
+- Abre uma WebView apontando para um servidor local ou remoto.
+- Usa permissões adequadas para acesso à internet.
+- Compatível com Android SDK 35 e NDK 27.
+- Já configurado para assinatura com chave `.jks`.
 
-## 🚀 Funcionalidades
+## 🚀 Como rodar
 
-* Jogabilidade entre dois jogadores (X e O)
-* Interface moderna e responsiva
-* Placar com contagem de vitórias para cada jogador
-* Detecção de vitória e empate
-* Botão de reinício de jogo
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-* [Python 3.7+](https://www.python.org/)
-* [Flet](https://flet.dev/): UI multiplataforma com Python
-
----
-
-## ▶️ Como Executar
-
-1. **Clone o repositório:**
+1. **Instale as dependências**:
 
    ```bash
-   git clone https://github.com/seu-usuario/jogo-da-velha-flet.git
-   cd jogo-da-velha-flet
+   flutter pub get
    ```
 
-2. **Crie um ambiente virtual (opcional, mas recomendado):**
+2. **Execute no dispositivo físico**:
 
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # No Windows: venv\Scripts\activate
+   flutter run
    ```
 
-3. **Instale as dependências:**
+3. **Compile para release (com assinatura)**:
 
    ```bash
-   pip install flet
+   flutter build apk --release
    ```
 
-4. **Execute o aplicativo:**
+## 🔐 Assinatura (release)
 
-   ```bash
-   python jogo_da_velha.py
-   ```
+Certifique-se de ter um arquivo `key.properties` com o seguinte conteúdo:
 
-5. Acesse no navegador:
+```properties
+storeFile=android/app/my-key.jks
+storePassword=******
+keyAlias=minha-chave
+keyPassword=******
+```
 
-   ```
-   http://localhost:8550
-   ```
-
----
+E a chave `.jks` deve estar no caminho correto (`android/app/my-key.jks`).
 
 ## 📁 Estrutura do Projeto
 
 ```
-jogo-da-velha-flet/
-│
-├── jogo_da_velha.py     # Código principal do jogo
-├── README.md            # Documentação do projeto
+flutter_webview_release/
+├── android/
+│   ├── app/
+│   │   ├── build.gradle
+│   │   ├── my-key.jks
+│   │   └── key.properties
+│   └── build.gradle
+├── lib/
+│   └── main.dart
+├── pubspec.yaml
+└── README.md
 ```
 
----
+## 🧪 Dependências
 
-## 📌 TODOs (Melhorias Futuras)
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  webview_flutter: ^4.2.2
+```
 
-* Modo contra a IA (inteligência artificial)
-* Animações ou efeitos de vitória
-* Histórico de partidas
-* Suporte a mobile com tela adaptativa
+## 🌐 Permissões
 
----
+Certifique-se de que o `AndroidManifest.xml` tem a permissão:
 
-## 🧑‍💻 Autor
+```xml
+<uses-permission android:name="android.permission.INTERNET"/>
+```
 
-Desenvolvido por **\[Seu Nome Aqui]**
-[LinkedIn](#) • [GitHub](#) • [Portfólio](#)
+## 🛠 Requisitos
 
+- Flutter 3.32+
+- Android SDK 35
+- Android NDK 27.0.12077973
+- Java 11+
 
+## 👩‍💻 Desenvolvido por
+
+Giovanna Dias — Projeto de integração com sistema web via WebView.
