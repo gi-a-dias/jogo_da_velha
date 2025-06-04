@@ -1,3 +1,4 @@
+'''
 import flet as ft
 from flet import Alignment
 from functools import partial
@@ -175,3 +176,4 @@ def main(page: ft.Page):
 
 ft.app(target=main)
 
+'''
