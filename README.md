@@ -1,89 +1,60 @@
-# 🕹️ Jogo da Velha com Flet + Python
 
-Um simples e divertido **Jogo da Velha (Tic Tac Toe)** feito com [Flet](https://flet.dev), uma biblioteca Python para criação de interfaces gráficas multiplataforma (sem precisar usar HTML, CSS ou JavaScript).
+## 📝Jogo da Velha (.exe offline)
 
-## 📸 Preview
+````markdown
+# 🕹️ Jogo da Velha (Python + Flet)
 
-![Preview](#) <!-- Você pode colocar uma imagem ou GIF do jogo aqui -->
+Um jogo da velha simples, com placar e interface moderna, desenvolvido em Python utilizando a biblioteca Flet — empacotado como executável (.exe), funcionando totalmente offline, sem navegador ou conexão com a internet.
 
 ---
 
-## 🚀 Funcionalidades
+## 📦 Como Executar (Windows)
 
-* Jogabilidade entre dois jogadores (X e O)
-* Interface moderna e responsiva
-* Placar com contagem de vitórias para cada jogador
-* Detecção de vitória e empate
-* Botão de reinício de jogo
+1. **Baixe o arquivo** `jogo_da_velha.exe`  
+2. **Dê um duplo clique** para abrir o app  
+3. Jogue direto: não precisa instalar nada!
+
+---
+
+## 🎮 Funcionalidades
+
+- Interface em estilo Flutter
+- Dois jogadores (X e O)
+- Contagem de vitórias
+- Verificação automática de vitória ou empate
+- Reinício rápido da partida
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-* [Python 3.7+](https://www.python.org/)
-* [Flet](https://flet.dev/): UI multiplataforma com Python
+- Python 3.11+
+- Flet (`flet` e `flet-cli`)
+- PyInstaller (para empacotar .exe)
 
 ---
 
-## ▶️ Como Executar
+## 🚀 Como gerar o executável você mesmo
 
-1. **Clone o repositório:**
+Caso queira gerar novamente:
 
-   ```bash
-   git clone https://github.com/seu-usuario/jogo-da-velha-flet.git
-   cd jogo-da-velha-flet
-   ```
+```bash
+pip install flet pyinstaller
+pyinstaller jogo_da_velha.py --noconfirm --onefile --noconsole --icon=jogoDaVelha.ico
+````
 
-2. **Crie um ambiente virtual (opcional, mas recomendado):**
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # No Windows: venv\Scripts\activate
-   ```
-
-3. **Instale as dependências:**
-
-   ```bash
-   pip install flet
-   ```
-
-4. **Execute o aplicativo:**
-
-   ```bash
-   python jogo_da_velha.py
-   ```
-
-5. Acesse no navegador:
-
-   ```
-   http://localhost:8550
-   ```
+> 💡 Use o modo `view=ft.FLET_APP` no `ft.app()` para que a aplicação funcione offline como app nativo (sem navegador).
 
 ---
 
-## 📁 Estrutura do Projeto
+## 📌 Notas
 
-```
-jogo-da-velha-flet/
-│
-├── jogo_da_velha.py     # Código principal do jogo
-├── README.md            # Documentação do projeto
-```
+* Esse aplicativo funciona em **Windows** sem necessidade de instalação de Python.
+* Para outras plataformas (Linux, macOS, Android), o código pode ser adaptado ou rodado como web app.
 
 ---
 
-## 📌 TODOs (Melhorias Futuras)
+## 👨‍💻 Autor
 
-* Modo contra a IA (inteligência artificial)
-* Animações ou efeitos de vitória
-* Histórico de partidas
-* Suporte a mobile com tela adaptativa
-
----
-
-## 🧑‍💻 Autor
-
-Desenvolvido por **\[Seu Nome Aqui]**
-[LinkedIn](#) • [GitHub](#) • [Portfólio](#)
-
-
+Desenvolvido por
+Projeto acadêmico
