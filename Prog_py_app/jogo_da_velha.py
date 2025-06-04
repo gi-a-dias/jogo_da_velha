@@ -124,5 +124,6 @@ def main(page: ft.Page):
     page.horizontal_alignment = "center"
     JogoDaVelha(page)
 
-ft.app(target=main, view=ft.AppView.FLET_APP)
+#ft.app(target=main, view=ft.WEB_BROWSER, port=8550) #-> usado para rodar na web
+ft.app(target=main, view=ft.FLET_APP) #-> usado para gerar o arquivo .exe (com icone)
 
