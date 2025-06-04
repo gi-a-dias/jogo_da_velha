@@ -36,7 +36,7 @@ Caso queira gerar novamente:
 
 ```bash
 pip install flet pyinstaller
-pyinstaller jogo_da_velha.py --noconfirm --onefile --noconsole --icon=jogoDaVelha.ico
+pyinstaller jogo_da_velha.py --noconfirm --onefile --noconsole --icon=jogoDaVelha.png
 ```
 
 ---
