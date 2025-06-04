@@ -53,10 +53,10 @@ pyinstaller jogo_da_velha.py --noconfirm --onefile --noconsole --icon=jogoDaVelh
 
 Desenvolvido por 
 
-Prof. Ms. Alex Lopes de Oliveira
-Giovanna Almeida Dias
-Lais de Paula Carneiro
-Miguel Rodrigues Araujo
+- Prof. Ms. Alex Lopes de Oliveira
+- Giovanna Almeida Dias
+- Lais de Paula Carneiro
+- Miguel Rodrigues Araujo
 
 Universidade Prespiteriana Mackenzie
 
