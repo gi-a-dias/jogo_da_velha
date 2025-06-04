@@ -1,0 +1,3 @@
+[submodule "jogo_da_velha_2/jogo_da_velha"]
+	path = jogo_da_velha_2/jogo_da_velha
+	url = https://github.com/gi-a-dias/jogo_da_velha.git
